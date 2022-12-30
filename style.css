@@ -180,8 +180,10 @@ header p {
 }
 
 .congratulation .comment {
-      font-family: 'Rubik Vinyl', cursive;
-      color: #05e39c;
+      font-size: 1rem;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-weight: 800;
+      color: #3f57ae;
 }
 
 .warning {
