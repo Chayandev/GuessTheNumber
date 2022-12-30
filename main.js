@@ -14,7 +14,7 @@ let overlay = document.querySelector(".overlay")
 let random_number = Math.floor(Math.random() * 100) + 1;
 console.log(random_number);
 console.log(typeof random_number);
-      let chance = 10, score = 100;
+      let chance = 2, score = 100;
 const set_value = (chance, score) =>
 {
       score_text.innerText = `Score = ${score}`;
@@ -71,7 +71,7 @@ const game_play = (num) => {
                   chance--;
                   score -= 10;
             }
-            const myTimeout = setTimeout(hint_box_hide, 6000);
+            const myTimeout = setTimeout(hint_box_hide, 8000);
             function hint_box_hide() {
                   document.querySelector('.hint-box').classList.remove('hint-box-active');
             }
@@ -83,7 +83,7 @@ const reset_game = () => {
       console.log(random_number);
       chance = 10, score = 100;
       document.querySelector('.final-score').innerText=`FNAL SCORE : `
-      // document.querySelector('.hint-box').style.visibility='hidden'
+      document.querySelector('.hint-box').classList.remove('hint-box-active');
       set_value(chance, score);
       }
 const warning_prompt_close = (warning_mode) => {
@@ -126,6 +126,8 @@ const warning_prompt_open = () => {
                 }
             }
             else {
+                  console.log("IN 0");
+                  let add_class_game_over = "game-over-active";
                   let game_over = document.querySelector(".game-over")
                   open_popUp(game_over, overlay,add_class_game_over);
             }
