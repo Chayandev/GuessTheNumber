@@ -14,7 +14,7 @@ let overlay = document.querySelector(".overlay")
 let random_number = Math.floor(Math.random() * 100) + 1;
 console.log(random_number);
 console.log(typeof random_number);
-      let chance = 2, score = 100;
+      let chance = 10, score = 100;
 const set_value = (chance, score) =>
 {
       score_text.innerText = `Score = ${score}`;
