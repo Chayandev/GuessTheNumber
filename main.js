@@ -122,7 +122,7 @@ const warning_prompt_open = () => {
                         let game_over = document.querySelector(".game-over")
                         document.querySelector('.final-score').innerText=`FNAL SCORE : ${score}`
                         open_popUp(game_over, overlay, add_class_game_over);
-                        document.querySelector('.result').innerText+=`${random_number} 😁`
+                        document.querySelector('.result').innerText=`Number : ${random_number} 😁`
                 }
             }
             else {
