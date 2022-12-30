@@ -151,8 +151,9 @@ header p {
       border-radius: 10px;
       z-index: 10;
       border: none;
-      background-color:
-            rgb(255, 244, 183);
+      background-image: url('images/congrats_bg.gif');
+      background-position: center center;
+      background-repeat: no-repeat;
       width: 450px;
       max-width: 80%;
       box-shadow: rgba(210, 206, 129, 0.482) 0px 7px 28px 0px;
