@@ -115,7 +115,8 @@ header p {
       color: #2ae7bd;
       font-size: 1rem;
       font-weight: 600;
-      margin-bottom: 0.5em;
+      margin-top:1em;
+      margin-bottom:0.7em;
 }
 
 .button-y-n {
