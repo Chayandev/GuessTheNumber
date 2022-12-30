@@ -80,7 +80,7 @@ const game_play = (num) => {
             correct_ans.play();
             let y_btn = document.querySelector('#yesh-btn');
             let n_btn = document.querySelector('#noo-btn');
-            document.querySelector('#final-score').innerText = `FNAL SCORE : ${score}`;
+            document.querySelector('#final-score').innerText = `FINAL SCORE : ${score}`;
             y_btn.addEventListener('click', function () {
                   game_music.currentTime = 0
                   game_music.play();
@@ -117,7 +117,7 @@ const reset_game = () => {
       console.log(random_number);
       chance = 10, score = 100;
 
-      document.querySelector('.final-score').innerText = `FNAL SCORE : `
+      document.querySelector('.final-score').innerText = `FINAL SCORE : `
       document.querySelector('.hint-box').classList.remove('hint-box-active');
       set_value(chance, score);
 }
@@ -158,7 +158,7 @@ guess_btn.addEventListener('click', function () {
             if (chance == 0) {
                   let add_class_game_over = "game-over-active";
                   let game_over = document.querySelector(".game-over")
-                  document.querySelector('.final-score').innerText = `FNAL SCORE : ${score}`
+                  document.querySelector('.final-score').innerText = `FINAL SCORE : ${score}`
                   open_popUp(game_over, overlay, add_class_game_over);
                   game_end.play();
                   document.querySelector('.result').innerText = `Number : ${random_number} 😁`
