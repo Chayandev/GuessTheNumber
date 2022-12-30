@@ -110,7 +110,7 @@ const warning_prompt_open = () => {
                   else {
                         let num = Number.parseInt(user_number.value);
                         console.log(typeof num);
-                        if (num < 1 || num > 100)
+                            if (num < 1 || num > 100 || isNaN(num))
                               warning_prompt_open();
                         else
                         game_play(num);
