@@ -1,4 +1,7 @@
-# GuessTheNumber
-This is yet to be modified more , more styling &amp; more functionality will be implemented in future.
+**GuessTheNumber**
 
-Live Hosting Link : 
+This is yet to be modified more , more styling &amp; more functionality will be implemented in future.
+this game is a simple game , to guess a random genareted number by computer in the starting of the game.
+player will get 10 chances to guess the correct number, if he/she can guess the number correctly within 10 chances then he/she will scored wlse score will be 0.
+
+**Live Hosting Link** : https://chayandev.github.io/GuessTheNumber/
